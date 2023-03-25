@@ -1,6 +1,6 @@
 ﻿namespace xadrez_console.tabuleiro
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
@@ -15,7 +15,13 @@
             this.qteMovimentos = 0;
             this.tab = tab;
         }
+
         public void incrementarQteMovimentos()
         { qteMovimentos++;}
+
+        public abstract bool[,] movimentosPossiveis();
+        
+
+        
     }
 }
