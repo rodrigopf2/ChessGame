@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace xadrez_console.tabuleiro
+namespace tabuleiro
 {
     class Tabuleiro
     {
@@ -41,7 +41,7 @@ namespace xadrez_console.tabuleiro
             pecas[pos.linha, pos.coluna] = p;
             p.posicao = pos;
         }
-        public Peca retirarPeca (Posicao pos)
+        public Peca retirarPeca(Posicao pos)
         {
             if (peca(pos) == null)
             {
@@ -53,9 +53,9 @@ namespace xadrez_console.tabuleiro
             pecas[pos.linha, pos.coluna] = null;
             return aux;
         }
-        public bool posicaoValida (Posicao pos)
+        public bool posicaoValida(Posicao pos)
         {
-            if (pos.linha<0 || pos.linha>=linhas || pos.coluna<0|| pos.coluna >= colunas)
+            if (pos.linha < 0 || pos.linha >= linhas || pos.coluna < 0 || pos.coluna >= colunas)
             {
                 return false;
             }

@@ -1,6 +1,9 @@
 ﻿using System;
-using xadrez_console.tabuleiro;
+using System.Collections.Generic;
+using tabuleiro;
 using xadrez;
+
+
 namespace xadrez_console
 {
     class Program
@@ -16,11 +19,8 @@ namespace xadrez_console
                     try
                     {
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
-
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                        Tela.imprimirPartida(partida);
+                                                
 
                         Console.WriteLine();
                         Console.Write("Origem: ");

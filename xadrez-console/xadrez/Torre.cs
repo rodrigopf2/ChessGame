@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using xadrez_console.tabuleiro;
+using tabuleiro;
 
 namespace xadrez
 {
     class Torre : Peca
     {
-        public Torre(Tabuleiro tab, Cor cor) : base(cor, tab) { }
+        public Torre(Tabuleiro tab, Cor cor) : base(tab, cor) { }
 
         private bool podeMover(Posicao pos)
         {

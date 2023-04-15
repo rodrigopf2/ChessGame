@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using xadrez_console.tabuleiro;
+using tabuleiro;
 
 namespace xadrez
 {
     class Rei : Peca
     {
-        public Rei(Tabuleiro tab, Cor cor) : base(cor, tab) { }
+        public Rei(Tabuleiro tab, Cor cor) : base(tab,cor) { }
 
         private bool podeMover(Posicao pos)
         {
